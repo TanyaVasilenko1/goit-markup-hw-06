@@ -41,28 +41,31 @@ img{
     .header-logo {
         margin-bottom: 10px;
     }
-    .nav{
+    .header-navigation{
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 15px;
     }
-    .nav a {
+    .header-list{
+        display: none;
+    }
+    .header-navigation .header-logo {
         font-size: 14px;
       }
-    .main{
+    .container{
         padding: 10px;
         text-align: center;
     }
-    .main img {
+    .container .icons-svg {
         width: 100%;
         height: auto;
       }
-      .main h1 {
+      .container .section-heder {
         font-size: 18px;
         margin-bottom: 10px;
       }
-      .main p {
+      .container .section-text {
         font-size: 14px;
         margin-bottom: 10px;
       }
@@ -70,7 +73,7 @@ img{
         text-align: center;
         padding: 10px;
     }
-    .footer p {
+    .footer .footer-text {
         font-size: 12px;
       }
 }
@@ -82,20 +85,25 @@ img{
         padding: 20px;
       }
     
-      .nav {
+      .header-navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         gap: 20px;
       }
     
-      .main {
+      .container {
         padding: 20px;
       }
       .footer{
         text-align: center;
         padding: 20px;
       }
+}
+@media (min-width:320px) and (max-width:766px){
+    .header-list{
+        display: none;
+    }
 }
 @media (min-width: 769px) and (max-width: 1158px) {
     .header {
@@ -105,14 +113,14 @@ img{
         padding: 30px;
       }
     
-      .nav {
+      .header-navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         gap: 30px;
       }
     
-      .main {
+      .container {
         padding: 30px;
       }
       .footer{
