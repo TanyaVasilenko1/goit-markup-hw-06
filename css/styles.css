@@ -973,10 +973,14 @@ address {
 .container-footer{
 
 margin-right: 24px;
+max-width: 264px;
    
 }
 .container{
     max-width: 768px;
+}
+.container-over-footer{
+    max-width: 464px;
 }
 .footer-link {
     text-align:left;
